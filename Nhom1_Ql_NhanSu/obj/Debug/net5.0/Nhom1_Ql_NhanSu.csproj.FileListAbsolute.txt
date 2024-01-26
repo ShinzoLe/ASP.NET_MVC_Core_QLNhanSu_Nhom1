@@ -197,3 +197,15 @@ D:\laptrinhweb\ASC.NET_MVC_Core\Nhom1_Ql_NhanSu\Nhom1_Ql_NhanSu\obj\Debug\net5.0
 D:\laptrinhweb\ASC.NET_MVC_Core\Nhom1_Ql_NhanSu\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Razor\Views\Shared\_FootPage.cshtml.g.cs
 D:\laptrinhweb\ASC.NET_MVC_Core\Nhom1_Ql_NhanSu\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Razor\Views\Shared\_HeadPage.cshtml.g.cs
 D:\laptrinhweb\ASC.NET_MVC_Core\Nhom1_Ql_NhanSu\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Razor\Views\Shared\_menu.cshtml.g.cs
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Nhom1_Ql_NhanSu.csproj.AssemblyReference.cache
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Nhom1_Ql_NhanSu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Nhom1_Ql_NhanSu.AssemblyInfoInputs.cache
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Nhom1_Ql_NhanSu.AssemblyInfo.cs
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Nhom1_Ql_NhanSu.csproj.CoreCompileInputs.cache
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Nhom1_Ql_NhanSu.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Nhom1_Ql_NhanSu.RazorAssemblyInfo.cache
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Nhom1_Ql_NhanSu.RazorAssemblyInfo.cs
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Nhom1_Ql_NhanSu.sourcelink.json
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Nhom1_Ql_NhanSu.dll
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\refint\Nhom1_Ql_NhanSu.dll
+C:\Users\tandu\OneDrive\Tài liệu\GitHub\ASP.NET_MVC_Core_QLNhanSu_Nhom1\Nhom1_Ql_NhanSu\obj\Debug\net5.0\Nhom1_Ql_NhanSu.pdb
