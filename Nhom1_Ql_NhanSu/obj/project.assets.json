@@ -9465,19 +9465,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ACER\\.nuget\\packages\\": {}
+    "C:\\Users\\tandu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\laptrinhweb\\ASC.NET_MVC_Core\\Nhom1_Ql_NhanSu - Copy\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
+      "projectUniqueName": "C:\\Users\\tandu\\OneDrive\\Tài liệu\\GitHub\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
       "projectName": "Nhom1_Ql_NhanSu",
-      "projectPath": "D:\\laptrinhweb\\ASC.NET_MVC_Core\\Nhom1_Ql_NhanSu - Copy\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
-      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "D:\\laptrinhweb\\ASC.NET_MVC_Core\\Nhom1_Ql_NhanSu - Copy\\Nhom1_Ql_NhanSu\\obj\\",
+      "projectPath": "C:\\Users\\tandu\\OneDrive\\Tài liệu\\GitHub\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
+      "packagesPath": "C:\\Users\\tandu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tandu\\OneDrive\\Tài liệu\\GitHub\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9559,7 +9564,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
