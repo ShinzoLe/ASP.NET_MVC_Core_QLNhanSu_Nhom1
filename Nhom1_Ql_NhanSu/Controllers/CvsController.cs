@@ -5,28 +5,26 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using QL_NhanSu_nhom1.Models.NhanVien;
+using Nhom1_Ql_NhanSu.Models.Entities;
 
-namespace QL_NhanSu_nhom1.Controllers
+namespace Nhom1_Ql_NhanSu.Controllers
 {
-    public class NhanViensController : Controller
+    public class CvsController : Controller
     {
         private readonly QL_NhanSuContext _context;
 
-        public NhanViensController(QL_NhanSuContext context)
+        public CvsController(QL_NhanSuContext context)
         {
             _context = context;
         }
 
-        // GET: NhanViens
+        // GET: Cvs
         public async Task<IActionResult> Index()
         {
-            var nhanViens = await _context.NhanViens.ToListAsync();
-            return View(nhanViens);
+            return View(await _context.Cvs.ToListAsync());
         }
 
-        // GET: NhanViens/Details/5
-        [HttpGet]
+        // GET: Cvs/Details/5
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -34,41 +32,39 @@ namespace QL_NhanSu_nhom1.Controllers
                 return NotFound();
             }
 
-            var nhanVien = await _context.NhanViens
-                .FirstOrDefaultAsync(m => m.MaNv == id);
-            if (nhanVien == null)
+            var cv = await _context.Cvs
+                .FirstOrDefaultAsync(m => m.MaCv == id);
+            if (cv == null)
             {
                 return NotFound();
             }
 
-            return View(nhanVien);
+            return View(cv);
         }
 
-
-        // GET: NhanViens/Create
-        [HttpGet]
+        // GET: Cvs/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: NhanViens/Create
+        // POST: Cvs/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        public async Task<IActionResult> Create([Bind("MaNv,Hoten,GioiTinh,NgaySinh,Email,Sdt,Diachi,Chucvu,TrangthaiNv")] NhanVien nhanVien)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("MaCv,HoTen,GioiTinh,NgaySinh,Email,Sdt,DiaChi,CongViec,TrinhDoHocVan,NgayNopCv,TinhTrang")] Cv cv)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(nhanVien);
+                _context.Add(cv);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(nhanVien);
+            return View(cv);
         }
 
-        // GET: NhanViens/Edit/5
-        [HttpGet]
+        // GET: Cvs/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -76,22 +72,22 @@ namespace QL_NhanSu_nhom1.Controllers
                 return NotFound();
             }
 
-            var nhanVien = await _context.NhanViens.FindAsync(id);
-            if (nhanVien == null)
+            var cv = await _context.Cvs.FindAsync(id);
+            if (cv == null)
             {
                 return NotFound();
             }
-
-            return View(nhanVien);
+            return View(cv);
         }
 
-        // POST: NhanViens/Edit/5
+        // POST: Cvs/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        public async Task<IActionResult> Edit(string id, [Bind("MaNv,Hoten,GioiTinh,NgaySinh,Email,Sdt,Diachi,Chucvu,TrangthaiNv")] NhanVien nhanVien)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(string id, [Bind("MaCv,HoTen,GioiTinh,NgaySinh,Email,Sdt,DiaChi,CongViec,TrinhDoHocVan,NgayNopCv,TinhTrang")] Cv cv)
         {
-            if (id != nhanVien.MaNv)
+            if (id != cv.MaCv)
             {
                 return NotFound();
             }
@@ -100,12 +96,12 @@ namespace QL_NhanSu_nhom1.Controllers
             {
                 try
                 {
-                    _context.Update(nhanVien);
+                    _context.Update(cv);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!NhanVienExists(nhanVien.MaNv))
+                    if (!CvExists(cv.MaCv))
                     {
                         return NotFound();
                     }
@@ -116,11 +112,10 @@ namespace QL_NhanSu_nhom1.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(nhanVien);
+            return View(cv);
         }
 
-        // GET: NhanViens/Delete/5
-        [HttpGet]
+        // GET: Cvs/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -128,30 +123,30 @@ namespace QL_NhanSu_nhom1.Controllers
                 return NotFound();
             }
 
-            var nhanVien = await _context.NhanViens
-                .FirstOrDefaultAsync(m => m.MaNv == id);
-            if (nhanVien == null)
+            var cv = await _context.Cvs
+                .FirstOrDefaultAsync(m => m.MaCv == id);
+            if (cv == null)
             {
                 return NotFound();
             }
 
-            return View(nhanVien);
+            return View(cv);
         }
 
-        // POST: NhanViens/Delete/5
+        // POST: Cvs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var nhanVien = await _context.NhanViens.FindAsync(id);
-            _context.NhanViens.Remove(nhanVien);
+            var cv = await _context.Cvs.FindAsync(id);
+            _context.Cvs.Remove(cv);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool NhanVienExists(string id)
+        private bool CvExists(string id)
         {
-            return _context.NhanViens.Any(e => e.MaNv == id);
+            return _context.Cvs.Any(e => e.MaCv == id);
         }
     }
 }
