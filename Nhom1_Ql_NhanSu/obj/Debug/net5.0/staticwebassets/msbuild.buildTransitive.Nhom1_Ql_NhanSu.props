@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Nhom1_Ql_NhanSu.props" />
-</Project>
