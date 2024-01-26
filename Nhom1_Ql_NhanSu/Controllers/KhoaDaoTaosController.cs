@@ -9,85 +9,85 @@ using Nhom1_Ql_NhanSu.Models.Entities;
 
 namespace Nhom1_Ql_NhanSu.Controllers
 {
-    public class DchinhsachesController : Controller
+    public class KhoaDaoTaosController : Controller
     {
         private readonly QL_NhanSuContext _context;
 
-        public DchinhsachesController(QL_NhanSuContext context)
+        public KhoaDaoTaosController(QL_NhanSuContext context)
         {
             _context = context;
         }
 
-        // GET: Dchinhsaches
+        // GET: KhoaDaoTaos
         public async Task<IActionResult> Index()
         {
-            return View("Index", await _context.Dchinhsaches.ToListAsync());
+            return View(await _context.KhoaDaoTaos.ToListAsync());
         }
 
-        // GET: Dchinhsaches/Details/5
-        public async Task<IActionResult> Details(string id)
+        // GET: KhoaDaoTaos/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var dchinhsach = await _context.Dchinhsaches
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (dchinhsach == null)
+            var khoaDaoTao = await _context.KhoaDaoTaos
+                .FirstOrDefaultAsync(m => m.MaKhoa == id);
+            if (khoaDaoTao == null)
             {
                 return NotFound();
             }
 
-            return View(dchinhsach);
+            return View(khoaDaoTao);
         }
 
-        // GET: Dchinhsaches/Create
+        // GET: KhoaDaoTaos/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Dchinhsaches/Create
+        // POST: KhoaDaoTaos/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Text,Class")] Dchinhsach dchinhsach)
+        public async Task<IActionResult> Create([Bind("MaKhoa,TenKhoa,MoTa,ThoiGianBatDau,ThoiGianKetThuc")] KhoaDaoTao khoaDaoTao)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(dchinhsach);
+                _context.Add(khoaDaoTao);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(dchinhsach);
+            return View(khoaDaoTao);
         }
 
-        // GET: Dchinhsaches/Edit/5
-        public async Task<IActionResult> Edit(string id)
+        // GET: KhoaDaoTaos/Edit/5
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var dchinhsach = await _context.Dchinhsaches.FindAsync(id);
-            if (dchinhsach == null)
+            var khoaDaoTao = await _context.KhoaDaoTaos.FindAsync(id);
+            if (khoaDaoTao == null)
             {
                 return NotFound();
             }
-            return View(dchinhsach);
+            return View(khoaDaoTao);
         }
 
-        // POST: Dchinhsaches/Edit/5
+        // POST: KhoaDaoTaos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("Id,Text,Class")] Dchinhsach dchinhsach)
+        public async Task<IActionResult> Edit(int id, [Bind("MaKhoa,TenKhoa,MoTa,ThoiGianBatDau,ThoiGianKetThuc")] KhoaDaoTao khoaDaoTao)
         {
-            if (id != dchinhsach.Id)
+            if (id != khoaDaoTao.MaKhoa)
             {
                 return NotFound();
             }
@@ -96,12 +96,12 @@ namespace Nhom1_Ql_NhanSu.Controllers
             {
                 try
                 {
-                    _context.Update(dchinhsach);
+                    _context.Update(khoaDaoTao);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!DchinhsachExists(dchinhsach.Id))
+                    if (!KhoaDaoTaoExists(khoaDaoTao.MaKhoa))
                     {
                         return NotFound();
                     }
@@ -112,41 +112,41 @@ namespace Nhom1_Ql_NhanSu.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(dchinhsach);
+            return View(khoaDaoTao);
         }
 
-        // GET: Dchinhsaches/Delete/5
-        public async Task<IActionResult> Delete(string id)
+        // GET: KhoaDaoTaos/Delete/5
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var dchinhsach = await _context.Dchinhsaches
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (dchinhsach == null)
+            var khoaDaoTao = await _context.KhoaDaoTaos
+                .FirstOrDefaultAsync(m => m.MaKhoa == id);
+            if (khoaDaoTao == null)
             {
                 return NotFound();
             }
 
-            return View(dchinhsach);
+            return View(khoaDaoTao);
         }
 
-        // POST: Dchinhsaches/Delete/5
+        // POST: KhoaDaoTaos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var dchinhsach = await _context.Dchinhsaches.FindAsync(id);
-            _context.Dchinhsaches.Remove(dchinhsach);
+            var khoaDaoTao = await _context.KhoaDaoTaos.FindAsync(id);
+            _context.KhoaDaoTaos.Remove(khoaDaoTao);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool DchinhsachExists(string id)
+        private bool KhoaDaoTaoExists(int id)
         {
-            return _context.Dchinhsaches.Any(e => e.Id == id);
+            return _context.KhoaDaoTaos.Any(e => e.MaKhoa == id);
         }
     }
 }
