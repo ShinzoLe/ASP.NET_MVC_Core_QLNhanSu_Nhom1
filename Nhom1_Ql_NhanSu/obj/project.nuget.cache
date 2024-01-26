@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Mw3Jl6X/y2OSSun4rPq2rKWVT9soTtoS/D553a+fSieKICao3pIlkjt1BcR5TwSu1l9YxEQOhMyUiaxWacOh/w==",
+  "dgSpecHash": "MwSpl9Y1fHgVtTuCzFR3dY1/JTgAjX9raa/+elNAR40sQNavw/GqFGiYILyiZnLCEDXD2+9CqvkBoTPtJXTIpw==",
   "success": true,
-  "projectFilePath": "D:\\laptrinhweb\\githubnhom1\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
+  "projectFilePath": "D:\\laptrinhweb\\Nhi\\chinhsach\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
