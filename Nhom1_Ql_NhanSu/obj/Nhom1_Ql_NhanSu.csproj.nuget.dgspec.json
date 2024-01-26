@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\laptrinhweb\\ASC.NET_MVC_Core\\Nhom1_Ql_NhanSu - Copy\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj": {}
+    "D:\\laptrinhweb\\githubnhom1\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj": {}
   },
   "projects": {
-    "D:\\laptrinhweb\\ASC.NET_MVC_Core\\Nhom1_Ql_NhanSu - Copy\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj": {
+    "D:\\laptrinhweb\\githubnhom1\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\laptrinhweb\\ASC.NET_MVC_Core\\Nhom1_Ql_NhanSu - Copy\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
+        "projectUniqueName": "D:\\laptrinhweb\\githubnhom1\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
         "projectName": "Nhom1_Ql_NhanSu",
-        "projectPath": "D:\\laptrinhweb\\ASC.NET_MVC_Core\\Nhom1_Ql_NhanSu - Copy\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
+        "projectPath": "D:\\laptrinhweb\\githubnhom1\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "D:\\laptrinhweb\\ASC.NET_MVC_Core\\Nhom1_Ql_NhanSu - Copy\\Nhom1_Ql_NhanSu\\obj\\",
+        "outputPath": "D:\\laptrinhweb\\githubnhom1\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
