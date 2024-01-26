@@ -1,0 +1,59 @@
+﻿@model Nhom1_Ql_NhanSu.Models.Entities.Kpi1
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    a {
+        text-decoration: none;
+    }
+</style>
+<h1>Điều Chỉnh</h1>
+<hr />
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="HoTen" class="control-label"></label>
+                <input asp-for="HoTen" class="form-control" />
+                <span asp-validation-for="HoTen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChucVu" class="control-label"></label>
+                <input asp-for="ChucVu" class="form-control" />
+                <span asp-validation-for="ChucVu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiLamDungGio" class="control-label"></label>
+                <input asp-for="DiLamDungGio" class="form-control" />
+                <span asp-validation-for="DiLamDungGio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiLamDayDu" class="control-label"></label>
+                <input asp-for="DiLamDayDu" class="form-control" />
+                <span asp-validation-for="DiLamDayDu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HoanThanhTotCongViec" class="control-label"></label>
+                <input asp-for="HoanThanhTotCongViec" class="form-control" />
+                <span asp-validation-for="HoanThanhTotCongViec" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DanhGiaKpi" class="control-label"></label>
+                <input asp-for="DanhGiaKpi" class="form-control" />
+                <span asp-validation-for="DanhGiaKpi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
