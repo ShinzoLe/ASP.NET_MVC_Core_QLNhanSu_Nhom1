@@ -1,0 +1,45 @@
+﻿@model Nhom1_Ql_NhanSu.Models.Entities.KhoaDaoTao
+
+@{
+    ViewData["Title"] = "Xóa";
+}
+
+<h1>Xóa </h1>
+
+<h3>Bạn có chắc là muốn xóa chứ?</h3>
+<div>
+    <h4>Khóa Đào Tạo </h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenKhoa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenKhoa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MoTa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ThoiGianBatDau)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ThoiGianBatDau)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ThoiGianKetThuc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ThoiGianKetThuc)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MaKhoa" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> 
+        <a asp-action="Index">Trở Lại Danh Sách </a>
+    </form>
+</div>

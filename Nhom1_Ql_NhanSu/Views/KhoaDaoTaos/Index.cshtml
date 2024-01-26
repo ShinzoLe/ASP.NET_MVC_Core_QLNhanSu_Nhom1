@@ -1,0 +1,97 @@
+﻿@model IEnumerable<Nhom1_Ql_NhanSu.Models.Entities.KhoaDaoTao>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    table, td, th {
+        border: 2px solid #ddd;
+        text-align: left;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .edit-button {
+        background-color: #428bca;
+        color: #ffffff;
+    }
+
+    .details-button {
+        background-color: #5cb85c;
+        color: #ffffff;
+    }
+
+    .delete-button {
+        background-color: #d9534f;
+        color: #ffffff;
+    }
+</style>
+
+<h1>Danh Mục Khóa Đào Tạo</h1>
+
+<p>
+    <a class="button edit-button" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TenKhoa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MoTa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThoiGianBatDau)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThoiGianKetThuc)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenKhoa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MoTa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThoiGianBatDau)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThoiGianKetThuc)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.MaKhoa" class="button edit-button">Chỉnh Sửa</a>
+                    <a asp-action="Details" asp-route-id="@item.MaKhoa" class="button details-button">Chi Tiết</a>
+                    <a asp-action="Delete" asp-route-id="@item.MaKhoa" class="button delete-button">Xóa</a>
+                </td>
+            </tr>
+}
+    </tbody>
+</table>
