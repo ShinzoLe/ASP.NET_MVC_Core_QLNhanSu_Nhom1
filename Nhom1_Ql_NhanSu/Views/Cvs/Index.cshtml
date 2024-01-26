@@ -1,0 +1,113 @@
+﻿@model IEnumerable<Nhom1_Ql_NhanSu.Models.Entities.Cv>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    table, td, th {
+        border: 2px solid #ddd;
+        text-align: left;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+</style>
+
+<h1>Tuyển Dụng</h1>
+
+<p>
+    <a class="btn btn-outline-primary" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HoTen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GioiTinh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgaySinh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sdt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiaChi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CongViec)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrinhDoHocVan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgayNopCv)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TinhTrang)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GioiTinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgaySinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sdt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CongViec)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrinhDoHocVan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayNopCv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TinhTrang)
+            </td>
+            <td>
+                    <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@item.MaCv">Edit</a>
+                    <a class="btn btn-outline-success" asp-action="Details" asp-route-id="@item.MaCv">Details</a>
+                    <a class="btn btn-outline-danger" asp-controller="Cvs" asp-action="Delete" asp-route-id="@item.MaCv">Delete</a>
+                </td>
+            
+        </tr>
+}
+    </tbody>
+</table>

@@ -9465,23 +9465,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tandu\\.nuget\\packages\\": {},
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tandu\\OneDrive\\Tài liệu\\GitHub\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
+      "projectUniqueName": "C:\\Githup\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
       "projectName": "Nhom1_Ql_NhanSu",
-      "projectPath": "C:\\Users\\tandu\\OneDrive\\Tài liệu\\GitHub\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
-      "packagesPath": "C:\\Users\\tandu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tandu\\OneDrive\\Tài liệu\\GitHub\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\obj\\",
+      "projectPath": "C:\\Githup\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\Nhom1_Ql_NhanSu.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "C:\\Githup\\ASP.NET_MVC_Core_QLNhanSu_Nhom1\\Nhom1_Ql_NhanSu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

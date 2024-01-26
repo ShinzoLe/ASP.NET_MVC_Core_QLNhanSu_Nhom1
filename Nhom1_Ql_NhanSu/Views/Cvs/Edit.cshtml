@@ -1,25 +1,23 @@
-﻿@model QL_NhanSu_nhom1.Models.NhanVien.NhanVien
+﻿@model Nhom1_Ql_NhanSu.Models.Entities.Cv
 
 @{
     ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<style>
-    a {
-        text-decoration: none;
-    }
-</style>
-<h1>Chỉnh sửa nhân viên</h1>
+
+<h1>Edit</h1>
+
+<h4>Cv</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="MaNv" />
+            <input type="hidden" asp-for="MaCv" />
             <div class="form-group">
-                <label asp-for="Hoten" class="control-label"></label>
-                <input asp-for="Hoten" class="form-control" />
-                <span asp-validation-for="Hoten" class="text-danger"></span>
+                <label asp-for="HoTen" class="control-label"></label>
+                <input asp-for="HoTen" class="form-control" />
+                <span asp-validation-for="HoTen" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="GioiTinh" class="control-label"></label>
@@ -42,20 +40,30 @@
                 <span asp-validation-for="Sdt" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Diachi" class="control-label"></label>
-                <input asp-for="Diachi" class="form-control" />
-                <span asp-validation-for="Diachi" class="text-danger"></span>
+                <label asp-for="DiaChi" class="control-label"></label>
+                <input asp-for="DiaChi" class="form-control" />
+                <span asp-validation-for="DiaChi" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Chucvu" class="control-label"></label>
-                <input asp-for="Chucvu" class="form-control" />
-                <span asp-validation-for="Chucvu" class="text-danger"></span>
+                <label asp-for="CongViec" class="control-label"></label>
+                <input asp-for="CongViec" class="form-control" />
+                <span asp-validation-for="CongViec" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TrangthaiNv" class="control-label"></label>
-                <input asp-for="TrangthaiNv" class="form-control" />
-                <span asp-validation-for="TrangthaiNv" class="text-danger"></span>
-            </div><br />
+                <label asp-for="TrinhDoHocVan" class="control-label"></label>
+                <input asp-for="TrinhDoHocVan" class="form-control" />
+                <span asp-validation-for="TrinhDoHocVan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgayNopCv" class="control-label"></label>
+                <input asp-for="NgayNopCv" class="form-control" />
+                <span asp-validation-for="NgayNopCv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TinhTrang" class="control-label"></label>
+                <input asp-for="TinhTrang" class="form-control" />
+                <span asp-validation-for="TinhTrang" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
@@ -64,6 +72,6 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-outline-success" asp-action="Index">Back to List</a>
 </div>
 
